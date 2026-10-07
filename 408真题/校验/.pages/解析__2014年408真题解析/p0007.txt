@@ -1,0 +1,46 @@
+39.解析：
+UDP提供的是无连接的服务，I正确；同时UDP也提供复用/分用服务，ⅡI正确；UDP虽
+然有差错校验机制，但是UDP的差错校验只是检查数据在传输的过程中有没有出错，出错的数
+据直接丢弃，并没有重传等机制，不能保证可靠传输，使用UDP协议时，可靠传输必须由应用
+层实现，IⅢI错误。答案选B。
+40．解析：
+当接入网络时可能会用到PPP协议，A可能用到；当计算机不知道某主机的MAC地址时，
+用IP地址查询相应的MAC地址时会用到ARP协议，B可能用到；当访问Web网站时，若DNS
+缓冲没有存储相应域名的IP地址，用域名查询相应的IP地址时要使用DNS协议，而DNS是
+基于UDP协议的，所以C可能用到；SMTP只有使用邮件客户端发送邮件，或是邮件服务器向
+别的邮件服务器发送邮件时才会用到，单纯的访问Web 网页不可能用到，选D。
+二、综合应用题
+41．解答：
+1）算法的基本设计思想：
+①基于先序递归遍历的算法思想是用一个 static 变量记录wpl，把每个结点的深度作为递
+归函数的一个参数传递，算法步骤如下：
+若该结点是叶子结点，则变量wpl加上该结点的深度与权值之积；
+若该结点非叶子结点，则若左子树不为空，对左子树调用递归算法，若右子树不为空，对
+右子树调用递归算法，深度参数均为本结点的深度参数加1；
+最后返回计算出的wpl即可。
+②基于层次遍历的算法思想是使用队列进行层次遍历，并记录当前的层数，
+当遍历到叶子结点时，累计wpl;
+当遍历到非叶子结点时，把该结点的子树加入队列;
+当某结点为该层的最后一个结点时，层数自增1;
+队列空时遍历结束，返回wpl。
+2）二叉树结点的数据类型定义如下：
+typedef struct BiTNode
+intweight;
+struct BiTNode *lchild,*rchild;
+}BiTNode,*BiTree;
+3）算法代码如下：
+①基于先序遍历的算法：
+int WPL(BiTree root){
+return wpl_PreOrder(root,0);
+int wpl_PreOrder(BiTree root,int deep){
+staticintwpl=0;
+//定义一个static变量存储wpl
+if(root->lchiid==NULL&&root->rchild==NULL)
+//若为叶子结点，累积wpl
+wpl += deep*root->weight;
+if(root->lchild!=NULL)
+//若左子树不空，对左子树递归遍历
+wpl_Pre0rder(root->lchild, deep+1);
+if(root->rchild !=NULL)
+//若右子树不空，对右子树递归遍历
+wpl_PreOrder(root->rchild, deep+l);

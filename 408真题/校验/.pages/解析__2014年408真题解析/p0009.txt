@@ -1,0 +1,58 @@
+一个函数构成，所以参考答案使用 st at ic 若对 st at ic不熟悉的同学可以使用以下形式的递归:
+int wpl_PreOrder(BiTree root,int deep){
+int lwpl,rwpl;
+//用于存储左子树和右子树的产生的wpl
+lwpl=rwpl=0;
+if(root->lchild==NULL&&root->lchild==NULL)
+//若为叶结点，计算当前叶结点的wpl
+return deep*root->weight;
+if(root->lchild!=NULL)
+//若左子树不空，对左子树递归遍历
+lwpl = wpl_Pre0rder(root->lchild, deep+l);
+if(root->rchild!=NULL)
+//若右子树不空，对右子树递归遍历
+rwpl=wpl_Pre0rder(root->rchild,deep+l);
+return lwpl+rwpl;
+）
+C/C++语言基础好的同学可以使用以下更简便的形式：
+int wpl_PreOrder(BiTree root,int deep){
+if(root->lchild==NULL&&root->lchild==NULL)
+//若为叶子结点，累积wpl
+return deep*root->weight;
+return (root->lchild!=NULL ?wpl PreOrder(root->lchild, deep+l):0)
++(root->rchild!=NULL ? wpl PreOrder(root->rchild,deep+1):0);
+这个形式只是上面方法的简化而已，本质是一样的，而这个形式的代码更短，在时间有限
+的情况下更具优势，相比写层次遍历能节约很多时间，所以读者应当在保证代码正确的情况下，
+尽量写一些较短的算法，为解答其他题目赢得更多的时间。但是，对于基础不扎实的考生，还
+是建议使用把握更大的方法，否则可能会得不偿失。例如在上面的代码中，考生容易忘记三元
+式(x?y:z)两端的括号，若不加括号，则答案就会是错误的。
+在层次遍历的算法中，读者要理解lastNode和newlastNode 的区别，last Node 指的是当前
+遍历层的最后一个结点，而 newlast Node 指的是下一层的最后一个结点，是动态变化的，直到遍
+历到本层的最后一个结点，才能确认下层真正的最后一个结点是哪个结点，而函数中入队操作并
+没有判断队满，若考试时用到，读者最好加上队满条件，这里队列的队满条件为endl=(end2+1)
+modM。同时，考生也可以尝试使用记录每层的第一个结点来进行层次遍历的算法，这里不再
+给出代码，请考生自行练习。
+42．解答：
+很多考生乍看之下以为是网络的题目，其实该题本身并没有涉及太多的网络知识点，只是
+应用了网络的模型，实际上考查的还是数据结构的内容。
+(1）图(1分)
+题中给出的是一个简单的网络拓扑图，可以抽象为无向图。
+【评分说明】
+只要考生的答案中给出与图含义相似的描述，例如，“网状结构”“非线性结构”等，同样
+给分。
+（2）链式存储结构的如下图所示。
+弧结点的两种基本形态
+Flag=1
+Next
+Flag=2Next
+ID
+Prefix
+RouterID
+表头结点
+IP
+Mask
+结构示意
+LN_link
+Metric
+Metric
+Next

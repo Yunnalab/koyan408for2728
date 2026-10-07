@@ -1,0 +1,67 @@
+46．解答：
+先找出线程对在各个变量上的互斥、并发关系。如果是一读一写或两个都是写，·那么这就
+是互斥关系。每一个互斥关系都需要一个信号量进行调节。
+semaphoremutex_y1=1;//mutex_y1用于thread1与thread3对变量y的互斥访问。
+semaphoremutex_y2=1；//mutex_y2用于thread2与thread3对变量y的互斥访问。
+semaphoremutex_z=1；//mutex_z用于变量z的互斥访问。
+互斥代码如下：（5分）
+threadl
+thread2
+thread3
+cnum w;
+cnum w;
+cnumw;
+wait( mutex_yl）;
+wait( mutex_y2);
+w.a=l;
+w=add( x,y):
+wait( mutex_z);
+w.h=l;
+signal( mutex_y1);
+w=add( y，z);
+wait( mutex_z);
+signal( mutex_z);
+z=add( z，w);
+signal( mutex_y2);
+signal( mutex_z);
+wait( mutex_yl);
+wait( mutex_y2);
+y=add( y, w):
+signal( mutex_yl);
+signal(mulex_y2);
+【评分说明】
+①各线程与变量之间的互斥、并发情况及相应评分见下表。
+线程对
+thread1和 thread2
+thread2 和 thread3
+thread1 和 thread3
+给分
+变量
+X
+不共享
+不共享
+不共享
+1分
+y
+同时读
+读写互斥
+读写互斥
+3分
+Z
+不共享
+读写互斥
+不共享
+1分
+②若考生仅使用一个互斥信号量，互斥代码部分的得分最多给2分。
+③答案部分正确，酌情给分。
+47．解答：
+（1）t时刻到t时刻期间，甲方可以断定乙方已正确接收了3个数据帧，（1 分）分别是 So,0,
+S1,0,S2,0（1分)。R3,3说明乙发送的数据帧确认号是3，即希望甲发送序号3的数据帧，说明乙
+已经接收了序号为0～2的数据帧。
+(2）从t时刻起，甲方最多还可以发送5个数据帧（1分），其中第一个帧是S5,2（1分),
+最后一个数据帧是Si,2（1分)。发送序号3位，有8个序号。在GBN 协议中，序号个数≥发送
+窗口+1，所以这里发送窗口最大为7。此时已发送了S3.0和S4,1，所以最多还可以发送5个帧。
+（3）甲方需要重发3个数据帧（1分），重发的第一个帧是S2,3（1分）。在GBN协议中，
+接收方发送了N帧后，检测出错，则需要发送出错帧及其之后的帧。S2.o超时，所以重发的第
+一帧是S2。已收到乙的R2帧，所以确认号应为3。
+（4）甲方可以达到的最大信道利用率是

@@ -1,0 +1,56 @@
+② 若i<Ln/2)」，则枢轴及之前的所有元素均属于 A，继续对i之后的元素进行划分;
+③ 若i>Ln/2)」，则枢轴及之后的所有元素均属于 A2，继续对i之前的元素进行划分;
+基于该设计思想实现的算法，无须对全部元素进行全排序，其平均时间复杂度是O(n)，空
+间复杂度是0(1)。
+(2）算法实现（9分）
+int setPartition(int a[l,int n){
+int pivotkey, low=0, low0=0, high=n-l, high0=n-l, flag=l,k=n/2,i;
+int s1=0,s2=0;
+while(flag){
+piovtkey=a[low];
+//选择枢轴
+while(low<high)[
+//基于枢轴对数据进行划分
+while(low<high && a[high]>=pivotkey) -high;
+if(low!=high) a[low]=a[high];
+while(low<high&&a[low]<=pivotkey)++low;
+if(low!=high) a[high]=a[low];
+//end of while(low<high)
+a[low]=pivotkey;
+if(low==k-1)
+//如果枢轴是第n/2小元素，划分成功
+flag=0;
+else{
+//是否继续划分
+if(low<k-1){
+low0=++low;
+high=high0;
+}
+elset
+high0=--high;
+low=low0;
+for（i=0;i<k;i++)sl+=a[i];
+for(i=k;i<n;i++) s2+=a[i];
+return s2-sl;
+【（1）（2）的评分说明】
+①本题目只需将最大的一半元素与最小的一半元素分组，不需要对所有元素进行全部排
+序。参考答案基于快速排序思想，采用非递归的方式实现。若考生设计的算法满足题目的功能
+要求且正确，则（1）、（2）根据所实现算法的平均时间复杂度给分，细则见下表。
+时间复杂度
+分
+数
+说
+明
+O(n)
+13
+采用类似快速排序思想，没有对元素进行全排序
+O(nlog2n)
+11
+O(n²)
+9
+其他
+7
+时间复杂度高于O(n)的算法
+②若在算法的基本设计思想描述中因文字表达没有清晰反映出算法思路，但在算法实现
+中能够表达出算法思想且正确的，可参照①的标准给分。
+③若算法的基本设计思想描述或算法实现中部分正确，可参照①中各种情况的相应给分

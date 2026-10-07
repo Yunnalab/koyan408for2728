@@ -1,0 +1,41 @@
+b
+L=|a-b]，L2=|b-c，L=｜c-a，D=|a-b|+b-c+|c-a|=L+L2+L=2L3
+由D的表达式可知，事实上决定D大小的关键是α和c之间的距离，于是问题就可以简化
+为每次固定c找一个α使得L,=c-α最小。
+1）算法的基本设计思想
+①使用Dmin记录所有已处理过的三元组的最小距离，初值为一个足够大的整数。
+②集合 S、S2和 Ss分别保存在数组 A、B、C 中。数组的下标变量i=j=k=0,当i<|S|
+j<|S2|且k<|S,|时（|S|表示集合 S中的元素个数)，循环执行a)～c)。
+a)计算（A[i],B[],C[]）的距离D；（计算D)
+b）若D<Dmin，则Dmin=D；（更新D)
+c）将A[],B[],C[以]中的最小值的下标+1;
+（对照分析：最小值为α，最大值为c,
+这里c不变而更新a，试图寻找更小距离D)
+③输出Dmin，结束。
+2）算法实现：
+#define INT MAx Ox7fffffff
+intabs（inta）{//计算绝对值
+if(a<0)return-a;
+else return a;
+boolxlsmin（inta，intb，intc）（//a是否是三个数中的最小值
+if（a<=b&&a<=c) return true;
+return false;
+int findMinofTrip（int A[],int n,int B[],intm,int C[],int p)(
+//Dmin用于记录三元组的最小距离，初值赋为INTMAX
+inti=O,j=O,k=O,D min=INT MAX,D;
+while(i<n&&j<m&&k<p&&D min>0){
+D=abs_（A[i]-B[j])+abs（B[j]-C[k])+abs(C[k]-A[i]);//计算D
+if（D<D min)D_min=D;
+//更新D
+if（xls_min（A[i],B[j],C[k]))i++;//更新a
+elseif(xls_min(B[j],C[k],A[i]))j++;
+else k++;
+return D min;
+3）设n=|S|+|S2|+|Ss|，时间复杂度为 O(n)，空间复杂度为 O(1)。
+42.【解析】
+1）使用一棵二叉树保存字符集中各字符的编码，每个编码对应于从根开始到达某叶结点的
+一条路径，路径长度等于编码位数，路径到达的叶结点中保存该编码对应的字符。
+2）从左至右依次扫描0/1串中的各位。从根开始，根据串中当前位沿当前结点的左子指针
+或右子指针下移，直到移动到叶结点时为止。输出叶结点中保存的字符。然后从根开始
+重复这个过程，直到扫描到0/1串结束，译码完成。
+·038·

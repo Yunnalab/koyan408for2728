@@ -1,0 +1,58 @@
+45．解答：
+互斥资源：缓冲区只能互斥访问，因此设置互斥信号量mutex。
+同步问题：P、P2因为奇数的放置与取用而同步，设同步信号量odd；P、P因为偶数的
+放置与取用而同步，设置同步信号量 even；P、P2、P3因为共享缓冲区，设同步信号量empty,
+初值为N。程序如下:
+semaphore mutex=1;
+semaphore odd=0,even=0;
+semaphore empty=N;
+main()
+cobegin{
+Process Pl()
+while(True)
+[
+x=produce() ;
+//生成一个数
+P(empty);
+//判断缓冲区是否有空单元
+P(mutex);
+//缓冲区是否被占用
+Put();
+V(mutex);
+//释放缓冲区
+if(x2==0)
+V(even);
+//如果是偶数，向P3发出信号
+else
+V(odd);
+//如果是奇数，向P2发出信号
+Process P2()
+while(True)
+P(odd) ;
+//收到P1发来的信号，已产生一个奇数
+P(mutex);
+//缓冲区是否被占用
+getodd() ;
+V(mutex);
+//释放缓冲区
+V(empty);
+//向P1发信号，多出一个空单元
+countodd();
+Process P3()
+while(True)
+P(even);
+//收到P1发来的信号，已产生一个偶数
+P(mutext);
+//缓冲区是否被占用
+geteven();
+V(mutex);
+//释放缓冲区
+V(empty) ;
+//向P1发信号，多出一个空单元
+counteven();
+}coend
+46．解答：
+1）根据页式管理的工作原理，应先考虑页面大小，以便将页号和页内位移分解出来。页面
+大小为 4KB，即 2'²，则得到页内位移占虚地址的低12 位，页号占剩余高位。可得三个虚地址的
+页号P如下（十六进制的一位数字转换成4位二进制，因此，十六进制的低三位正好为页内位移，
+最高位为页号):

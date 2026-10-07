@@ -1,0 +1,65 @@
+取指令的功能是根据PC的内容所指主存地址，取出指令代码，经过MDR，最终送至IR。
+这部分和后面的指令执行阶段的取操作数、存运算结果的方法是相通的。
+C1: (PC)→MAR
+在读写存储器前，必须先将地址（这里为(PC)）送至MAR。
+C2: M(MAR)→MDR, (PC) + 1→PC
+读写的数据必须经过MDR，指令取出后PC自增1。
+C3: (MDR)→IR
+然后将读到MDR中指令代码送至IR进行后续操作。
+指令“ADD(R1),RO”的操作数一个在主存中，一个在寄存器中，运算结果在主存中。根
+据指令功能,要读出 R1的内容所指的主存单元,必须先将R1的内容送至 MAR,即(R1)→MAR。
+而读出的数据必须经过MDR，即M(MAR)→MDR。
+因此，将R1的内容所指主存单元的数据读出到MDR的节拍安排如下：
+C5: (R1)→MAR
+C6: M(MAR)→MDR
+ALU一端是寄存器A，MDR或RO中必须有一个先写入A中，如MDR。
+C7:(MDR)→A
+然后执行加法操作，并将结果送入寄存器AC。
+C8: (A) + (R0)→AC
+之后将加法结果写回到R1的内容所指主存单元，注意MAR中的内容没有改变。
+C9: (AC)→MDR
+C10: (MDR)→M(MAR)
+有效控制信号的安排并不难，只需看数据是流入还是流出，如流入寄存器X就是Xin，流
+出寄存器X就是Xout。还需注意其他特殊控制信号，如 PC+1、Add 等。
+于是得到参考答案如下：
+时钟
+功能
+有效控制信号
+C5
+MAR←(R1)
+R1out, MARin
+C6
+MDR-M(MAR)
+MemR, MDRinE
+C7
+A-(MDR)
+MDRout, Ain
+C8
+AC←(A)+(R0)
+R0out, Add, ACin
+C9
+MDR←(AC)
+ACout, MDRin
+C10
+M(MAR)-(MDR)
+MDRoutE,MemW
+本题答案不唯一，如果在 C6 执行 M(MAR)→MDR 的同时，完成(R0)→A（即选择将(RO)
+写入A)，并不会发生总线冲突，这种方案可节省1个节拍，见下表。
+时钟
+功能
+有效控制信号
+C5
+MAR(R1)
+Rlout, MARin
+C6
+MDRM(MAR),A←(R0)
+MemR,MDRinE,ROout,Ain
+C7
+AC-(MDR)+(A)
+MDRout, Add, ACin
+C8
+MDR-(AC)
+ACout, MDRin
+C9
+M(MAR)-(MDR)
+MDRoutE,MemW

@@ -1,0 +1,59 @@
+return wpl;
+基于层次遍历的算法：
+#define MaxSize 100
+//设置队列的最大容量
+int wpl_LevelOrder(BiTree root){
+BiTree q[MaxSize];
+//声明队列，endl为头指针，end2为尾指针
+int endl,end2;
+//队列最多容纳MaxSize-1个元素
+end1 = end2 = 0;
+//头指针指向队头元素，尾指针指向队尾的后一个元素
+intwpl=0，deep=0;
+//初始化wp1和深度
+BiTree lastNode;
+//lastNode用来记录当前层的最后一个结点
+BiTree newlastNode;
+//newlastNode用来记录下一层的最后一个结点
+lastNode = root;
+//lastNode初始化为根结点
+newlastNode = NULL;
+//newlastNode初始化为空
+q[end2++]=root;
+//根结点入队
+while(endl != end2){
+//层次遍历，若队列不空则循环
+BiTreet=g[endl++];
+//拿出队列中的头一个元素
+if（t->lchild ==NULL&t->lchild==NULL）{
+wpl += deep*t->weight;
+//若为叶子结点，统计wpl
+if（t->1child！=NULL）{//若非叶子结点把左结点入队
+q[end2++] = t->lchild;
+newlastNode =t->lchild;
+//并设下一层的最后一个结点为该结点的左结点
+if（t->rchild！=NULL）{//处理叶结点
+q[end2++]=t->rchi1d;
+newlastNode = t->rchild;
+if（t==lastNode）{
+//若该结点为本层最后一个结点，更新lastNode
+lastNode = newlastNode;
+deep += 1;
+//层数加1
+}//while
+//返回wpl
+return wpl;
+【评分说明】
+①若考生给出能够满足题目要求的其他算法且正确，可同样给分。
+②考生答案无论使用C或者C++语言，只要答案正确同样给分。
+③若对算法的基本设计思想和主要数据结构描述不十分准确，但在算法实现中能够清晰
+反映出算法思想且正确，参照①的标准给分。
+④若考生给出的二叉树结点的数据类型定义和算法实现中，使用的是除整型之外的其他
+数值，可视同使用整型类型。
+③若考生给出的答案中算法主要设计思想或算法中部分正确，可酌情给分。
+注意：上述两个算法一个为递归的先序遍历，一个为非递归的层次遍历，读者应当选取自
+己最擅长的书写方式。直观看去，先序遍历代码行数少，不用运用其他工具，书写也更容易，
+希望读者能掌握。
+在先序遍历的算法中，static是一个静态变量，只在首次调用函数时声明wpl并赋值为0,
+以后的递归调用并不会使得wpl为0，具体用法请参考相关资料中的关键字static说明，也可以
+在函数之外预先设置一个全局变量，并初始化。不过考虑到历年真题算法答案通常都直接仅由

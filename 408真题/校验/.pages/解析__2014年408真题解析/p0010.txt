@@ -1,0 +1,85 @@
+其数据类型定义如下：（3分）
+typedef structf
+unsigned int ID, IP;
+LinkNode;
+//Link的结构
+typedef structf
+unsigned int Prefix,Mask;
+NetNode;
+//Net的结构
+typedef struct Node
+int Flag;
+//Flag=1为Link;Flag=2为Net
+uniont
+LinkNode Lnode;
+NetNode Nnode
+)LinkORNet;
+unsigned int Metric;
+struct Node *next;
+ArcNode;
+//弧结点
+typedefstructHNode
+unsignedintRouterID;
+ArcNode *LN link;
+struct HNode *next;
+}HNODE;
+//表头结点
+对应上述链式存储结构的示意图如下。（2分）
+10.1.1.1
+Flag=1
+Flag=1
+Flag=2j
+10.1.1.2
+10.1.1.5
+192.1.1.0
+10.1.1.1
+10.1.1.9
+255.255.255.0
+3
+2
+1
+10.1.1.2
+Flag=1
+Flag=1
+Flag=2
+10.1.1.1
+10.1.1.6
+192.1.6.0
+10.1.1.2
+10.1.1.13
+255.255.255.0
+3
+4
+1
+10.1.1.5
+Flag=1
+Flag=1
+Flag=2
+10.1.1.6
+10.1.1.1
+192.1.5.0
+10.1.1.5
+10.1.1.10
+255.255.255.0
+6
+2
+1
+10.1.1.6
+Flag=1
+Flag=1
+Flag=2
+10.1.1.5
+10.1.1.2
+192.1.7.0
+10.1.1.6
+10.1.1.14
+255.255.255.0
+6
+4
+1
+【评分说明】
+①若考生给出的答案是将链表中的表头结点保存在一个一维数组中（即采用邻接表形
+式)，同样给分。
+②若考生给出的答案中，弧结点没有使用 union 定义，而是采用两种不同的结构分别表示
+Link和Net，同时在表头结点中定义了两个指针，分别指向由这两种类型的结点构成的两个链
+表，同样给分。

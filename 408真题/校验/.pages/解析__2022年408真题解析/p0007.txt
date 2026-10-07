@@ -1,0 +1,48 @@
+2）算法实现
+#define false 0
+#define true 1
+typedef int bool;
+bool judgeInOrderBST(SqBiTree bt,int k,int *val)(//初始调用时k的值是0
+if(k<bt.ElemNum&&bt.SqBiTNode[k]!=-l){
+if(!judgeInOrderBST(bt,2*k+l,val)) return false;
+if(bt.SqBiTNode[k]<=*val) return false;
+*val=bt.SqBiTNode[k];
+if(!judgeInOrderBST(bt,2*k+2,val)) return false;
+return true;
+【答案2】
+1）算法的基本设计思想
+对于采用顺序存储方式保存的二叉树，根结点保存在SqBiTNode[O］中；当某结点保存在
+SqBiTNode[i]中时，若有左孩子，则其值保存在 SqBiTNode[2i+l］中；若有右孩子，则
+其值保存在 SqBiTNode[2i+2］中；若有双亲结点，则其值保存在 SqBiTNode[（i-1）/2]
+中。
+二叉搜索树需要满足的条件是：任一结点值大于其左子树中的全部结点值，小于其右子树
+中的全部结点值。设置两个数组 pmax 和 pmin。根据二叉搜索树的定义，SqBiTNode[i]
+中的值应该大于以SqBiTNode[2i+1]为根的子树中的最大值（保存在pmax[2i+1]
+中)，小于以 SqBiTNode［2i+2]为根的子树中的最小值（保存在pmin[2i+1]中）。初
+始时，用数组 SqBiTNode 中前ElemNum个元素的值对数组pmax和 pmin 初始化。
+在数组SqBiTNode中从后向前扫描，扫描过程中逐一验证结点与子树之间是否满足上述
+的大小关系。
+2）算法实现
+#define false0
+#define true 1
+typedef int bool;
+bool judgeBsT(SqBiTree bt)(
+intk,m,*pmin,*pmax;
+pmin=(int *)malloc(sizeof(int) *(bt.ElemNum) );
+pmax=(int *)malloc(sizeof(int) *(bt.ElemNum) );
+for(k=0;k<bt.ElemNum;k++)
+//辅助数组初始化
+pmin[k]=pmax[k]=bt.SqBiTNode[k];
+for（k=bt.ElemNum-1;k>0;k--）{//从最后一个叶结点向根遍历
+if(bt.SqBiTNode[k]!=-1){
+m=（k-1)/2;
+1/双亲
+if(k2==1&&bt.SqBiTNode[m] >pmax[k])
+1/其为左孩子
+pmin[m]=pmin[k];
+else if（k2==0&&bt.SqBiTNode[m]<pmin[k]）/ /其为右孩子
+pmax[m]=pmax[k];
+else return false;
+return true;
+42.【解析】
+1）算法思想

@@ -1,0 +1,40 @@
+部分封装IPv6数据包，实现IPv6数据的传输。这样可以在IPv4网络上运行IPv6，使得IPv6
+数据可以通过IPv4网络进行传输，实现IPv4到IPv6的过渡。选项IⅢI正确。Hop-Limit字段和
+TTL字段的作用都是限制数据报在网络中的传输跳数（即经过的路由器数量）。每经过个路由
+器，跳数值就会减少。当跳数值达到O时，数据报会被丢弃，并发送一个ICMP（InternetControl
+MessageProtocol）时间超时报文。选项IV正确。所以本题的正确答案为D选项。
+二、综合应用题
+41.【解析】
+(1）算法设计思想：
+(a）初始化计数器cnt为0，用于记录K顶点的个数。
+(b）遍历图中的每个顶点v:
+I.
+初始化inDegree和outDegree为O，分别表示顶点v的人度和出度。
+IⅡ．遍历图中的每个顶点u：如果边(u,v)存在，即G.Edge[u][v]为1，则将outDegree增
+加 1。如果边(v,u)存在，即G.Edge[v][u] 为1，则将 inDegree增加 1。
+IⅢI.如果outDegree 大于inDegree，则顶点v是一个K顶点。输出顶点v,将cnt增加 1。
+(c）返回cnt作为K顶点的个数。
+(2)算法实现
+int printVertices(MGraph G)
+intcnt=0；//计数器，记录k顶点的个数
+/遍历每个顶点
+for (int v = O; v < G.numVertices; v++) {
+int inDegree=0;//入度
+intoutDegree=0;//出度
+1/遍历每个顶点
+for (int u = O; u < G.numVertices; u++)
+if（G.Edge[u][v]==1）//边（u，y）存在，出度增加1
+outDegree++;
+if（G.Edge[v][u]==1）//边（v，u)存在，入度增加1
+inDegree++;
+if（outDegree>inDegree）//如果出度大于入度，则是K顶点
+printf（"%c"，G.VertexList[v]）；//输出顶点v
+cnt++；//计数器增加1
+returncnt；//返回K顶点的个数
+42.【解析】
+(1）共有3个归并段分别为：①37，51，63，92，94，99；②14，15，23，31，48，56，60，90，
+166；③8，17，43，100。
+具体步骤如下：
+①读取51，94，37，92四个记录进人工作区，选择最小元素37进人归并段，同时MINIMAX
+更新为37。
+②读取14进人工作区，从工作区51，94，92，14中选择大于MINIMAX的最小元素51进

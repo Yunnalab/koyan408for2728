@@ -1,0 +1,47 @@
+40．解析：
+Connection:连接方式，Close表明为非持续连接方式，keep-alive表示持续连接方式。Cookie
+值是由服务器产生的,HTTP请求报文中有Cookie报头表示曾经访问过www.test.edu.cn服务器。
+二、综合应用题
+41．解答:
+1）算法的基本设计思想
+算法的核心思想是用空间换时间。使用辅助数组记录链表中已出现的数值，从而只需对链
+表进行一趟扫描。
+因为ldatal≤n，故辅助数组q的大小为n +1，各元素的初值均为 0。依次扫描链表中的各
+结点，同时检查 q[ldata]的值，如果为 0，则保留该结点，并令 a[ldatal]=1；否则，将该结点从
+链表中删除。
+2）使用C语言描述的单链表结点的数据类型定义
+typedef struct node
+int
+data;
+struct node
+*link;
+}NODE;
+Typedef NODE *PNODE;
+3）算法实现
+void func(PNODEh,intn)
+PNODE p=h,r;
+int *q,m;
+g=（int*）malloc（sizeof（int）*（n+l））；//申请n+l个位置的辅助空间
+for(int i=0;i<n+l;i++)
+//数组元素初值置0
+*（q+i）=0;
+while(p->link!=NULL)
+m=p->link->data>0? p->link->data:-p->link->data;
+if（*（q+m）==0)
+//判断该结点的data是否已出现过
+*(q+m）=1;
+//首次出现
+p=p->link;
+//保留
+else
+//重复出现
+r=p->link;
+//删除
+p->link=r->link
+free(r);
+free(g);
+【评分说明】若考生设计的算法满足题目的功能要求且正确，则酌情给分。
+4）参考答案所给算法的时间复杂度为O(m)，空间复杂度为O(n)。
+【评分说明】若考生所估计的时间复杂度和空间复杂度与考生实现的算法一致，可给分。
+42．解答：
+1）图G的邻接矩阵A如下:
