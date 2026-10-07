@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">8</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">cb4ce770-c2fe-4dec-9380-bfd147f0330c</dc:identifier>
+        <dc:title>[OCR] 王道2027操作系统-高清带书签 20260817 1223.layered</dc:title>
+        <dc:creator opf:file-as="未知" opf:role="aut">未知</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (9.13.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+        <dc:language>zh</dc:language>
+        <meta name="calibre:timestamp" content="2026-08-17T05:37:01.588654+00:00"/>
+        <meta name="calibre:title_sort" content="[OCR] 王道2027操作系统-高清带书签 20260817 1223.layered"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="封面" href="cover.jpg"/>
+    </guide>
+</package>
