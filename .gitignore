@@ -1,15 +1,5 @@
-# GitHub 单文件上限 100 MiB —— 以下 10 个超大 PDF 无法通过普通 git 推送
-# 见 README.md「大文件说明」
-/408课本/Wei Zhi/Ji Suan Ji Cao Zuo Xi Tong  Di 4Ban  Tang Xiao Dan (4)/Ji Suan Ji Cao Zuo Xi Tong  Di 4Ban  Tang - Wei Zhi.pdf
-/408课本/Wei Zhi/Ji Suan Ji Wang Luo  Di 8Ban  Xie Xi Ren (1)/Ji Suan Ji Wang Luo  Di 8Ban  Xie Xi Ren - Wei Zhi.pdf
-/2027王道电子版/Wei Zhi/2027Ji Suan Ji Wang Luo  Gao Qing Dai Shu Qian Ban (1)/2027Ji Suan Ji Wang Luo  Gao Qing Dai Shu - Wei Zhi.pdf
-/2027王道电子版/Wei Zhi/\[OCR\] 2027Ji Suan Ji Wang Luo  Gao Qing Dai Shu Qian Ban  20260814 1309.layered (5)/\[OCR\] 2027Ji Suan Ji Wang Luo  Gao Qing Da - Wei Zhi.pdf
-/2027王道电子版/Wei Zhi/2027Ji Suan Ji Zu Cheng Yuan Li  Gao Qing Dai Shu Qian Ban (4)/2027Ji Suan Ji Zu Cheng Yuan Li  Gao Qing - Wei Zhi.pdf
-/2027王道电子版/Wei Zhi/2027Shu Ju Jie Gou  Gao Qing Dai Shu Qian Ban (2)/2027Shu Ju Jie Gou  Gao Qing Dai Shu Qian - Wei Zhi.pdf
-/2027王道电子版/Wei Zhi/\[OCR\] 2027Ji Suan Ji Zu Cheng Yuan Li  Gao Qing Dai Shu Qian Ban  20260814 1507.layered (6)/\[OCR\] 2027Ji Suan Ji Zu Cheng Yuan Li  Gao - Wei Zhi.pdf
-/2027王道电子版/Wei Zhi/\[OCR\] 2027Shu Ju Jie Gou  Gao Qing Dai Shu Qian Ban  20260817 1159.layered (9)/\[OCR\] 2027Shu Ju Jie Gou  Gao Qing Dai Shu - Wei Zhi.pdf
-/2027王道电子版/Wei Zhi/Wang Dao 2027Cao Zuo Xi Tong -Gao Qing Dai Shu Qian (3)/Wang Dao 2027Cao Zuo Xi Tong -Gao Qing Dai - Wei Zhi.pdf
-/2027王道电子版/Wei Zhi/\[OCR\] Wang Dao 2027Cao Zuo Xi Tong -Gao Qing Dai Shu Qian  20260817 1223.layered (8)/\[OCR\] Wang Dao 2027Cao Zuo Xi Tong -Gao Qi - Wei Zhi.pdf
+# 大文件（>100 MiB）由 Git LFS 管理，见 .gitattributes
+# 注意：模式里的方括号必须转义，否则会被当成字符类通配符
 
 # Calibre 删除书籍的回收站
 .caltrash/
