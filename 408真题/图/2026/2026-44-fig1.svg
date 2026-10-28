@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760">
+<defs><marker id="ah" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#111"/></marker><marker id="ahs" markerWidth="10" markerHeight="8" refX="1" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M10,0 L0,4 L10,8 z" fill="#111"/></marker></defs>
+<rect width="1000" height="760" fill="#fff"/>
+<g font-family="Times New Roman, 'Noto Serif CJK SC', 'Songti SC', STSong, serif" fill="#111">
+<text x="135" y="40" font-size="17" text-anchor="middle" dominant-baseline="middle">RegWr</text>
+<text x="198" y="40" font-size="17" text-anchor="middle" dominant-baseline="middle">IR.rt</text>
+<text x="236" y="40" font-size="17" text-anchor="middle" dominant-baseline="middle">15</text>
+<text x="296" y="40" font-size="17" text-anchor="middle" dominant-baseline="middle">IR.rs</text>
+<text x="332" y="40" font-size="17" text-anchor="middle" dominant-baseline="middle">0</text>
+<text x="455" y="40" font-size="17" text-anchor="middle" dominant-baseline="middle">ALUAsrc</text>
+<text x="548" y="40" font-size="17" text-anchor="middle" dominant-baseline="middle">PCin</text>
+<rect x="178" y="115" width="67" height="43" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="211" y="137" font-size="20" text-anchor="middle" dominant-baseline="middle">①</text>
+<rect x="278" y="115" width="67" height="43" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="311" y="137" font-size="20" text-anchor="middle" dominant-baseline="middle">②</text>
+<path d="M198,52 L198,115" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M236,52 L236,115" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M294,52 L294,115" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M332,52 L332,115" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M155,92 L155,137 L178,137" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<path d="M372,92 L372,137 L345,137" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<path d="M135,52 L135,298 L175,298" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<rect x="175" y="258" width="165" height="160" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="210" y="282" font-size="17" text-anchor="middle" dominant-baseline="middle">ra</text>
+<text x="310" y="282" font-size="17" text-anchor="middle" dominant-baseline="middle">rb</text>
+<text x="193" y="330" font-size="17" text-anchor="middle" dominant-baseline="middle">rw</text>
+<text x="275" y="330" font-size="18" text-anchor="middle" dominant-baseline="middle">GPRs</text>
+<text x="257" y="372" font-size="18" text-anchor="middle" dominant-baseline="middle">通用寄存器组</text>
+<path d="M211,158 L211,258" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M311,158 L311,258" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<polygon points="68,284 118,306 118,372 68,394" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="96" y="339" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 96 339)">MUX</text>
+<text x="80" y="316" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 80 316)">0</text>
+<text x="80" y="368" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 80 368)">1</text>
+<text x="80" y="243" font-size="17" text-anchor="middle" dominant-baseline="middle">RegDst</text>
+<path d="M98,255 L98,293" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<text x="30" y="316" font-size="17" text-anchor="middle" dominant-baseline="middle">0</text>
+<path d="M40,316 L68,316" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<text x="22" y="368" font-size="17" text-anchor="middle" dominant-baseline="middle">IR.rt</text>
+<path d="M46,368 L68,368" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M118,339 L175,339" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M335,602 L42,602 L42,405 L175,405" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<text x="75" y="425" font-size="17" text-anchor="middle" dominant-baseline="middle">busW</text>
+<polygon points="425,218 475,238 475,310 425,330" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="455" y="274" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 455 274)">MUX</text>
+<text x="437" y="248" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 437 248)">0</text>
+<text x="437" y="300" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 437 300)">1</text>
+<path d="M340,300 L425,300" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<text x="368" y="288" font-size="17" text-anchor="middle" dominant-baseline="middle">busA</text>
+<rect x="508" y="113" width="82" height="42" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="549" y="134" font-size="18" text-anchor="middle" dominant-baseline="middle">PC</text>
+<path d="M508,134 L390,134 L390,248 L425,248" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<circle cx="488" cy="134" r="3.2" fill="#111"/>
+<path d="M488,134 L488,90 L632,90 L632,300 L650,300" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M455,52 L455,226" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<path d="M548,52 L548,113" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<polygon points="525,240 595,282 595,395 525,437 525,352 547,338 525,324" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="540" y="280" font-size="17" text-anchor="middle" dominant-baseline="middle">A</text>
+<text x="540" y="400" font-size="17" text-anchor="middle" dominant-baseline="middle">B</text>
+<text x="572" y="338" font-size="17" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 572 338)">ALU</text>
+<path d="M475,274 L525,274" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<polygon points="425,340 475,360 475,432 425,452" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="455" y="396" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 455 396)">MUX</text>
+<text x="437" y="372" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 437 372)">0</text>
+<text x="437" y="403" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 437 403)">1</text>
+<text x="437" y="432" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 437 432)">2</text>
+<path d="M340,372 L425,372" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<circle cx="362" cy="372" r="3.2" fill="#111"/>
+<text x="368" y="360" font-size="17" text-anchor="middle" dominant-baseline="middle">busB</text>
+<text x="382" y="405" font-size="17" text-anchor="middle" dominant-baseline="middle">2</text>
+<path d="M392,405 L425,405" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M475,400 L525,400" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<rect x="205" y="500" width="95" height="45" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="252" y="522" font-size="18" text-anchor="middle" dominant-baseline="middle">扩展器</text>
+<text x="56" y="522" font-size="17" text-anchor="start" dominant-baseline="middle">IR<tspan font-size="12" dy="6">11～0</tspan></text>
+<path d="M118,522 L205,522" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M152,531 L164,513" fill="none" stroke="#111" stroke-width="1.4"/>
+<text x="168" y="503" font-size="16" text-anchor="middle" dominant-baseline="middle">12</text>
+<path d="M300,522 L390,522 L390,432 L425,432" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M324,531 L336,513" fill="none" stroke="#111" stroke-width="1.4"/>
+<text x="342" y="503" font-size="16" text-anchor="middle" dominant-baseline="middle">16</text>
+<path d="M362,372 L362,492 L765,492" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M595,349 L650,349" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<circle cx="612" cy="349" r="3.2" fill="#111"/>
+<path d="M612,349 L612,134 L590,134" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M612,349 L612,575 L400,575" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<polygon points="650,270 702,290 702,360 650,380" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="680" y="325" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 680 325)">MUX</text>
+<text x="662" y="300" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 662 300)">0</text>
+<text x="662" y="349" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 662 349)">1</text>
+<path d="M678,412 L678,372" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<text x="678" y="425" font-size="17" text-anchor="middle" dominant-baseline="middle">MARsrc</text>
+<path d="M702,325 L765,325" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<rect x="765" y="307" width="78" height="40" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="804" y="327" font-size="18" text-anchor="middle" dominant-baseline="middle">MAR</text>
+<path d="M804,278 L804,307" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<path d="M843,327 L918,327" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<text x="890" y="315" font-size="17" text-anchor="middle" dominant-baseline="middle">ABus</text>
+<rect x="765" y="474" width="78" height="40" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="804" y="494" font-size="18" text-anchor="middle" dominant-baseline="middle">MDR</text>
+<path d="M804,446 L804,474" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<path d="M845,494 L916,494" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" marker-start="url(#ahs)"/>
+<text x="890" y="480" font-size="17" text-anchor="middle" dominant-baseline="middle">DBus</text>
+<path d="M804,514 L804,532 L720,532" fill="none" stroke="#111" stroke-width="1.4"/>
+<circle cx="720" cy="532" r="3.2" fill="#111"/>
+<path d="M720,628 L720,158" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M720,628 L400,628" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<rect x="668" y="115" width="78" height="43" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="707" y="137" font-size="18" text-anchor="middle" dominant-baseline="middle">IR</text>
+<path d="M688,115 L688,72" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M726,82 L726,115" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<rect x="770" y="113" width="58" height="78" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="799" y="138" font-size="18" text-anchor="middle" dominant-baseline="middle">控制</text>
+<text x="799" y="166" font-size="18" text-anchor="middle" dominant-baseline="middle">单元</text>
+<path d="M746,137 L770,137" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M782,113 L782,80" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<path d="M816,113 L816,80" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<text x="799" y="96" font-size="14" text-anchor="middle" dominant-baseline="middle">…</text>
+<text x="812" y="62" font-size="17" text-anchor="middle" dominant-baseline="middle">控制信号</text>
+<path d="M828,137 L918,137" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<text x="890" y="124" font-size="17" text-anchor="middle" dominant-baseline="middle">CBus</text>
+<path d="M918,167 L828,167" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M860,60 L860,585" fill="none" stroke="#111" stroke-width="1.4" stroke-dasharray="6 4"/>
+<rect x="918" y="118" width="44" height="446" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="940" y="300" font-size="18" text-anchor="middle" dominant-baseline="middle">主</text>
+<text x="940" y="324" font-size="18" text-anchor="middle" dominant-baseline="middle">存</text>
+<text x="940" y="348" font-size="18" text-anchor="middle" dominant-baseline="middle">储</text>
+<text x="940" y="372" font-size="18" text-anchor="middle" dominant-baseline="middle">器</text>
+<polygon points="400,545 400,660 335,640 335,565" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="365" y="602" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 365 602)">MUX</text>
+<text x="388" y="575" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 388 575)">1</text>
+<text x="388" y="628" font-size="15" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 388 628)">0</text>
+<path d="M252,705 L252,545" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<path d="M368,705 L368,650" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<path d="M455,705 L455,444" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<path d="M560,705 L560,420" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<text x="252" y="725" font-size="17" text-anchor="middle" dominant-baseline="middle">ExtOp</text>
+<text x="368" y="725" font-size="17" text-anchor="middle" dominant-baseline="middle">RegWsrc</text>
+<text x="455" y="725" font-size="17" text-anchor="middle" dominant-baseline="middle">ALUBsrc</text>
+<text x="560" y="725" font-size="17" text-anchor="middle" dominant-baseline="middle">ALUctr</text>
+<text font-size="16" x="640" y="672">注：busA=R[ra]，busB=R[rb]，</text>
+<text font-size="16" x="640" y="696">R[rw]=busW，RegWr=1表示</text>
+<text font-size="16" x="640" y="720">GPRs可写入信息</text>
+</g></svg>

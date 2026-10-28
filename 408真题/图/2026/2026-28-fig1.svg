@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="96" viewBox="0 0 800 96" role="img" aria-label="64位虚拟地址结构：保留25位、三级页号各9位、页内偏移12位">
+  <rect width="800" height="96" fill="#fff"/>
+  <rect x="16" y="12" width="768" height="72" fill="none" stroke="#111" stroke-width="1.5"/>
+  <g stroke="#111" stroke-width="1.5">
+    <path d="M316 12v72 M424 12v72 M532 12v72 M640 12v72"/>
+  </g>
+  <g text-anchor="middle" fill="#111" font-size="16" font-family="Songti SC, STSong, PingFang SC, Noto Serif CJK SC, serif">
+    <text x="166" y="43">保留</text><text x="166" y="68">25位</text>
+    <text x="370" y="43">一级页号</text><text x="370" y="68">9位</text>
+    <text x="478" y="43">二级页号</text><text x="478" y="68">9位</text>
+    <text x="586" y="43">三级页号</text><text x="586" y="68">9位</text>
+    <text x="712" y="43">页内偏移</text><text x="712" y="68">12位</text>
+  </g>
+</svg>

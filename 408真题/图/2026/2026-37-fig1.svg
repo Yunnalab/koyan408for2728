@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500" viewBox="0 0 960 500">
+<rect width="960" height="500" fill="#fff"/>
+<line x1="330" y1="80" x2="620" y2="80" stroke="#111" stroke-width="1.4"/>
+<text x="475" y="72" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">5</text>
+<line x1="330" y1="80" x2="330" y2="250" stroke="#111" stroke-width="1.4"/>
+<rect x="318" y="152" width="24" height="22" fill="#fff"/>
+<text x="330" y="169" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">2</text>
+<text x="364" y="152" font-family="Times New Roman, serif" font-size="16" font-style="italic">t<tspan font-size="11" dy="4" font-style="normal">1</tspan></text>
+<line x1="356" y1="163" x2="398" y2="163" stroke="#111" stroke-width="1.3"/>
+<path d="M398 158 l10 5 -10 5 z" fill="#111"/>
+<text x="420" y="169" text-anchor="middle" font-family="Times New Roman, serif" font-size="18">∞</text>
+<line x1="330" y1="250" x2="620" y2="80" stroke="#111" stroke-width="1.4"/>
+<rect x="465" y="150" width="22" height="22" fill="#fff"/>
+<text x="476" y="167" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">6</text>
+<line x1="620" y1="80" x2="620" y2="250" stroke="#111" stroke-width="1.4"/>
+<rect x="608" y="154" width="24" height="22" fill="#fff"/>
+<text x="620" y="171" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">4</text>
+<line x1="330" y1="250" x2="620" y2="250" stroke="#111" stroke-width="1.4"/>
+<rect x="464" y="238" width="24" height="22" fill="#fff"/>
+<text x="476" y="256" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">3</text>
+<line x1="220" y1="74" x2="330" y2="80" stroke="#111" stroke-width="1.4"/>
+<ellipse cx="140" cy="74" rx="92" ry="26" fill="#fff" stroke="#111" stroke-width="1.5"/>
+<text x="140" y="80" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">199.10.20.0/27</text>
+<line x1="620" y1="80" x2="720" y2="100" stroke="#111" stroke-width="1.4"/>
+<ellipse cx="810" cy="100" rx="96" ry="26" fill="#fff" stroke="#111" stroke-width="1.5"/>
+<text x="810" y="106" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">199.10.20.32/27</text>
+<line x1="620" y1="250" x2="720" y2="262" stroke="#111" stroke-width="1.4"/>
+<ellipse cx="812" cy="262" rx="96" ry="26" fill="#fff" stroke="#111" stroke-width="1.5"/>
+<text x="812" y="268" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">199.10.20.64/26</text>
+<line x1="620" y1="250" x2="620" y2="392" stroke="#111" stroke-width="1.4"/>
+<ellipse cx="620" cy="418" rx="100" ry="26" fill="#fff" stroke="#111" stroke-width="1.5"/>
+<text x="620" y="424" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">199.10.20.128/25</text>
+<line x1="160" y1="250" x2="330" y2="250" stroke="#111" stroke-width="1.4"/>
+<path d="M70 268 q-26 -6 -14 -26 q-6 -24 22 -24 q10 -20 36 -10 q22 -14 40 6 q26 0 20 24 q16 18 -8 30 q-4 22 -34 16 q-18 16 -40 2 q-26 6 -22 -18 z" fill="#fff" stroke="#111" stroke-width="1.5"/>
+<text x="118" y="256" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">Internet</text>
+<line x1="330" y1="250" x2="330" y2="388" stroke="#111" stroke-width="1.4"/>
+<path d="M312 392 l10 -8 h26 l-10 8 z M312 392 h26 v54 h-26 z M338 392 l10 -8 v52 l-10 10 z" fill="#ddd" stroke="#111" stroke-width="1.3"/>
+<line x1="316" y1="404" x2="334" y2="404" stroke="#111" stroke-width="1"/>
+<line x1="316" y1="410" x2="334" y2="410" stroke="#111" stroke-width="1"/>
+<circle cx="341" cy="438" r="5" fill="#555" stroke="#111"/>
+<path d="M296 240 v22 a34 11 0 0 0 68 0 v-22" fill="#e6e6e6" stroke="#111" stroke-width="1.5"/>
+<ellipse cx="330" cy="240" rx="34" ry="11" fill="#f4f4f4" stroke="#111" stroke-width="1.5"/>
+<g transform="translate(330 240) scale(1 0.4000)" fill="#333" stroke="none"><polygon points="-18.88,-20.01 -9.33,-10.47 -12.59,-7.21 -1.98,-5.09 -4.10,-15.70 -7.35,-12.45 -16.90,-21.99"/><polygon points="18.88,20.01 9.33,10.47 12.59,7.21 1.98,5.09 4.10,15.70 7.35,12.45 16.90,21.99"/><polygon points="2.97,-4.10 12.52,-13.65 15.77,-10.39 17.89,-21.00 7.28,-18.88 10.54,-15.63 0.99,-6.08"/><polygon points="-2.97,4.10 -12.52,13.65 -15.77,10.39 -17.89,21.00 -7.28,18.88 -10.54,15.63 -0.99,6.08"/></g>
+<text x="330" y="266" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">R1</text>
+<path d="M296 70 v22 a34 11 0 0 0 68 0 v-22" fill="#e6e6e6" stroke="#111" stroke-width="1.5"/>
+<ellipse cx="330" cy="70" rx="34" ry="11" fill="#f4f4f4" stroke="#111" stroke-width="1.5"/>
+<g transform="translate(330 70) scale(1 0.4000)" fill="#333" stroke="none"><polygon points="-18.88,-20.01 -9.33,-10.47 -12.59,-7.21 -1.98,-5.09 -4.10,-15.70 -7.35,-12.45 -16.90,-21.99"/><polygon points="18.88,20.01 9.33,10.47 12.59,7.21 1.98,5.09 4.10,15.70 7.35,12.45 16.90,21.99"/><polygon points="2.97,-4.10 12.52,-13.65 15.77,-10.39 17.89,-21.00 7.28,-18.88 10.54,-15.63 0.99,-6.08"/><polygon points="-2.97,4.10 -12.52,13.65 -15.77,10.39 -17.89,21.00 -7.28,18.88 -10.54,15.63 -0.99,6.08"/></g>
+<text x="330" y="96" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">R2</text>
+<path d="M586 70 v22 a34 11 0 0 0 68 0 v-22" fill="#e6e6e6" stroke="#111" stroke-width="1.5"/>
+<ellipse cx="620" cy="70" rx="34" ry="11" fill="#f4f4f4" stroke="#111" stroke-width="1.5"/>
+<g transform="translate(620 70) scale(1 0.4000)" fill="#333" stroke="none"><polygon points="-18.88,-20.01 -9.33,-10.47 -12.59,-7.21 -1.98,-5.09 -4.10,-15.70 -7.35,-12.45 -16.90,-21.99"/><polygon points="18.88,20.01 9.33,10.47 12.59,7.21 1.98,5.09 4.10,15.70 7.35,12.45 16.90,21.99"/><polygon points="2.97,-4.10 12.52,-13.65 15.77,-10.39 17.89,-21.00 7.28,-18.88 10.54,-15.63 0.99,-6.08"/><polygon points="-2.97,4.10 -12.52,13.65 -15.77,10.39 -17.89,21.00 -7.28,18.88 -10.54,15.63 -0.99,6.08"/></g>
+<text x="620" y="96" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">R3</text>
+<path d="M586 240 v22 a34 11 0 0 0 68 0 v-22" fill="#e6e6e6" stroke="#111" stroke-width="1.5"/>
+<ellipse cx="620" cy="240" rx="34" ry="11" fill="#f4f4f4" stroke="#111" stroke-width="1.5"/>
+<g transform="translate(620 240) scale(1 0.4000)" fill="#333" stroke="none"><polygon points="-18.88,-20.01 -9.33,-10.47 -12.59,-7.21 -1.98,-5.09 -4.10,-15.70 -7.35,-12.45 -16.90,-21.99"/><polygon points="18.88,20.01 9.33,10.47 12.59,7.21 1.98,5.09 4.10,15.70 7.35,12.45 16.90,21.99"/><polygon points="2.97,-4.10 12.52,-13.65 15.77,-10.39 17.89,-21.00 7.28,-18.88 10.54,-15.63 0.99,-6.08"/><polygon points="-2.97,4.10 -12.52,13.65 -15.77,10.39 -17.89,21.00 -7.28,18.88 -10.54,15.63 -0.99,6.08"/></g>
+<text x="620" y="266" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">R4</text>
+<text x="304" y="214" text-anchor="middle" font-family="Times New Roman, serif" font-size="15">S1</text>
+<text x="372" y="214" text-anchor="middle" font-family="Times New Roman, serif" font-size="15">S2</text>
+<text x="270" y="242" text-anchor="middle" font-family="Times New Roman, serif" font-size="15">S0</text>
+<text x="386" y="272" text-anchor="middle" font-family="Times New Roman, serif" font-size="15">S3</text>
+<text x="306" y="300" text-anchor="middle" font-family="Times New Roman, serif" font-size="15">S4</text>
+</svg>

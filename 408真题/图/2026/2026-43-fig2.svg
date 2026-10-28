@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="291" height="194" viewBox="0 0 291 194">
+<rect width="291" height="194" fill="#fff"/>
+<rect x="10" y="10" width="271" height="174" fill="none" stroke="#111" stroke-width="1.2"/>
+<text x="28" y="42" text-anchor="start" font-family="Times New Roman, serif" font-size="16">I1:</text>
+<text x="139" y="42" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">0000</text>
+<text x="191" y="42" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">0000</text>
+<text x="243" y="42" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">0000</text>
+<line x1="69" y1="47" x2="107" y2="47" stroke="#111" stroke-width="1.1"/>
+<circle cx="88" cy="36" r="7.4" fill="none" stroke="#111" stroke-width="1.1"/>
+<text x="88" y="40.6" text-anchor="middle" font-family="Times New Roman, serif" font-size="13.5">1</text>
+<text x="28" y="82" text-anchor="start" font-family="Times New Roman, serif" font-size="16">I2:</text>
+<text x="87" y="82" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">0000</text>
+<text x="243" y="82" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">0010</text>
+<line x1="121" y1="87" x2="211" y2="87" stroke="#111" stroke-width="1.1"/>
+<circle cx="166" cy="76" r="7.4" fill="none" stroke="#111" stroke-width="1.1"/>
+<text x="166" y="80.6" text-anchor="middle" font-family="Times New Roman, serif" font-size="13.5">2</text>
+<text x="28" y="122" text-anchor="start" font-family="Times New Roman, serif" font-size="16">I3:</text>
+<text x="87" y="122" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">0100</text>
+<text x="139" y="122" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">0000</text>
+<line x1="173" y1="127" x2="263" y2="127" stroke="#111" stroke-width="1.1"/>
+<circle cx="218" cy="116" r="7.4" fill="none" stroke="#111" stroke-width="1.1"/>
+<text x="218" y="120.6" text-anchor="middle" font-family="Times New Roman, serif" font-size="13.5">3</text>
+<text x="28" y="162" text-anchor="start" font-family="Times New Roman, serif" font-size="16">I4:</text>
+<text x="87" y="162" text-anchor="middle" font-family="Times New Roman, serif" font-size="16">1111</text>
+<line x1="121" y1="167" x2="263" y2="167" stroke="#111" stroke-width="1.1"/>
+<circle cx="192" cy="156" r="7.4" fill="none" stroke="#111" stroke-width="1.1"/>
+<text x="192" y="160.6" text-anchor="middle" font-family="Times New Roman, serif" font-size="13.5">4</text>
+</svg>

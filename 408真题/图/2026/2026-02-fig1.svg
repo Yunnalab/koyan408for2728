@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="64" viewBox="0 0 240 64">
+  <rect x="1.5" y="1.5" width="237" height="61" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <line x1="80" y1="1.5" x2="80" y2="62.5" stroke="#111111" stroke-width="1.5"/>
+  <line x1="160" y1="1.5" x2="160" y2="62.5" stroke="#111111" stroke-width="1.5"/>
+  <text x="40" y="39" text-anchor="middle" font-family="Times New Roman, serif" font-size="20">p2</text>
+  <text x="120" y="39" text-anchor="middle" font-family="Times New Roman, serif" font-size="20">d</text>
+  <text x="200" y="39" text-anchor="middle" font-family="Times New Roman, serif" font-size="20">p1</text>
+</svg>

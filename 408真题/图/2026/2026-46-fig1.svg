@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="256" viewBox="0 0 300 256">
+<defs><linearGradient id="fb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a5a5a"/><stop offset="1" stop-color="#a8a8a8"/></linearGradient><linearGradient id="ff" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2e2e2"/><stop offset="0.6" stop-color="#9c9c9c"/><stop offset="1" stop-color="#4a4a4a"/></linearGradient><linearGradient id="pg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f2f2f2"/><stop offset="1" stop-color="#8a8a8a"/></linearGradient></defs>
+<rect width="300" height="256" fill="#fff"/>
+<path d="M42,74 V150 H110" fill="none" stroke="#111" stroke-width="1.3"/>
+<path d="M131,170 V239 H212" fill="none" stroke="#111" stroke-width="1.3"/>
+<polygon points="40,22 49,25 51,31 72,39 72,82 40,68" fill="url(#fb)" stroke="#111" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="16,38 46,47 72,82 42,72" fill="url(#ff)" stroke="#111" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M46,47 Q60,58 64,74" fill="none" stroke="#333" stroke-width="0.9"/>
+<polygon points="128,114 137,117 139,123 160,131 160,174 128,160" fill="url(#fb)" stroke="#111" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="104,130 134,139 160,174 130,164" fill="url(#ff)" stroke="#111" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M134,139 Q148,150 152,166" fill="none" stroke="#333" stroke-width="0.9"/>
+<polygon points="212,190 232,193 243,205 243,246 212,240" fill="url(#pg)" stroke="#111" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="232,193 233,204 243,205" fill="#cfcfcf" stroke="#111" stroke-width="1"/>
+<path d="M216,204 L230,206" stroke="#111" stroke-width="1.3"/>
+<path d="M216,210 L239,212" stroke="#111" stroke-width="1.3"/>
+<path d="M216,216 L239,218" stroke="#111" stroke-width="1.3"/>
+<path d="M216,222 L239,224" stroke="#111" stroke-width="1.3"/>
+<path d="M216,228 L239,230" stroke="#111" stroke-width="1.3"/>
+<path d="M216,234 L239,236" stroke="#111" stroke-width="1.3"/>
+<text x="78" y="70" font-family="'Times New Roman', serif" font-size="20">dir</text>
+<text x="166" y="162" font-family="'Times New Roman', serif" font-size="20">dir1</text>
+<text x="252" y="236" font-family="'Times New Roman', serif" font-size="20">file</text>
+</svg>
