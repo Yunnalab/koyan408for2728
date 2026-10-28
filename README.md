@@ -2,6 +2,21 @@
 
 27/28 考研 408（计算机学科专业基础综合）资料库。
 
+## 下载（免装 Git LFS）
+
+三套书已打包为 Release 附件，直接下载即可：
+
+**<https://github.com/Yunnalab/koyan408for2728/releases/tag/books-2027>**
+
+| 附件 | 内容 | 大小 |
+|------|------|------|
+| `2027-wangdao-*.pdf` ×4 | 2027 王道四科（OCR 版） | 142 MB |
+| `textbook-*.pdf` ×4 | 408 四本经典教材 | 240 MB |
+| `BOK-lecture-notes-and-mindmaps.zip` | BOK 强化课导图 + 讲义 | 121 MB |
+| `SHA256SUMS.txt` | 全部附件的校验和 | — |
+
+附件名用 ASCII 便于命令行引用，对应中文书名见 Release 说明。
+
 ## 目录
 
 | 目录 | 内容 | 约计 |
