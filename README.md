@@ -6,34 +6,63 @@
 
 | 目录 | 内容 | 约计 |
 |------|------|------|
-| `2027王道电子版/` | 2027 王道四科高清电子书（扫描版 + OCR 版） | 约 1.7 GB（大部见下） |
+| `2027王道电子版/` | 2027 王道四科电子书（OCR 版，每科一本） | 142 MB |
 | `2027王道大题做题本/` | 王道复习指导四科应用题做题本（紧凑版 / 简约竖版） | 116 MB |
-| `408课本/` | 四本经典教材扫描版（唐朔飞、严蔚敏、汤小丹、谢希仁） | 298 MB |
+| `408课本/` | 四本经典教材（唐朔飞、严蔚敏、汤小丹、谢希仁） | 240 MB |
 | `408真题/` | 2009–2025 真题题目与解析（PDF + 部分 Word / 图片） | 85 MB |
 | `BOK强化课导图与pdf/` | Beokayy_ 强化课思维导图（xmind）与讲义 PDF | 131 MB |
 | `计算机网络知识点背诵/` | 计网背诵提纲 | 4.6 MB |
 | `知识库(用于AI)/` | 各教材 / 王道书的 Markdown 全文 + 结构化报告，供 AI 检索 | 12 MB |
 
-## 大文件说明
+两套书都是扁平结构，一本书一个文件：
 
-GitHub 对单个文件有 **100 MiB 硬限制**，以下 10 个 PDF 无法通过普通 git 推送，
-已在 `.gitignore` 中排除。它们仍保留在本地 `~/Study/考研/408` 下：
+```
+2027王道电子版/
+  2027王道-数据结构.pdf          36.5 MB
+  2027王道-计算机组成原理.pdf     34.9 MB
+  2027王道-操作系统.pdf          38.4 MB
+  2027王道-计算机网络.pdf        32.4 MB
 
-| 大小 | 路径 |
+408课本/
+  数据结构（C语言版·严蔚敏）.pdf        33.3 MB
+  计算机组成原理（第3版·唐朔飞）.pdf    29.5 MB
+  计算机操作系统（第4版·汤小丹）.pdf    49.3 MB
+  计算机网络（第8版·谢希仁）.pdf       127.5 MB
+```
+
+## 大文件：Git LFS
+
+GitHub 对普通文件有 **100 MiB 硬限制**，这两套书全部由 Git LFS 托管（见 `.gitattributes`），
+免费额度 1 GiB，当前占用约 382 MB。
+
+克隆后正常 `git lfs pull` 即可拿到文件；只有 `git clone --filter=blob:none` 或未装 `git-lfs` 时才会拿到指针文本。
+
+## 压缩策略
+
+原始扫描件 1.74 GB（10 个文件）已用 Ghostscript 重采样后入库，**文字层与书签全部保留**：
+
+| 处理 | 说明 |
 |------|------|
-| 106 MB | `408课本/Wei Zhi/Ji Suan Ji Cao Zuo Xi Tong  Di 4Ban  Tang Xiao Dan (4)/Ji Suan Ji Cao Zuo Xi Tong  Di 4Ban  Tang - Wei Zhi.pdf` |
-| 128 MB | `408课本/Wei Zhi/Ji Suan Ji Wang Luo  Di 8Ban  Xie Xi Ren (1)/Ji Suan Ji Wang Luo  Di 8Ban  Xie Xi Ren - Wei Zhi.pdf` |
-| 188 MB | `2027王道电子版/Wei Zhi/2027Ji Suan Ji Wang Luo  Gao Qing Dai Shu Qian Ban (1)/2027Ji Suan Ji Wang Luo  Gao Qing Dai Shu - Wei Zhi.pdf` |
-| 193 MB | `2027王道电子版/Wei Zhi/[OCR] 2027Ji Suan Ji Wang Luo  Gao Qing Dai Shu Qian Ban  20260814 1309.layered (5)/[OCR] 2027Ji Suan Ji Wang Luo  Gao Qing Da - Wei Zhi.pdf` |
-| 200 MB | `2027王道电子版/Wei Zhi/2027Ji Suan Ji Zu Cheng Yuan Li  Gao Qing Dai Shu Qian Ban (4)/2027Ji Suan Ji Zu Cheng Yuan Li  Gao Qing - Wei Zhi.pdf` |
-| 202 MB | `2027王道电子版/Wei Zhi/2027Shu Ju Jie Gou  Gao Qing Dai Shu Qian Ban (2)/2027Shu Ju Jie Gou  Gao Qing Dai Shu Qian - Wei Zhi.pdf` |
-| 204 MB | `2027王道电子版/Wei Zhi/[OCR] 2027Ji Suan Ji Zu Cheng Yuan Li  Gao Qing Dai Shu Qian Ban  20260814 1507.layered (6)/[OCR] 2027Ji Suan Ji Zu Cheng Yuan Li  Gao - Wei Zhi.pdf` |
-| 208 MB | `2027王道电子版/Wei Zhi/[OCR] 2027Shu Ju Jie Gou  Gao Qing Dai Shu Qian Ban  20260817 1159.layered (9)/[OCR] 2027Shu Ju Jie Gou  Gao Qing Dai Shu - Wei Zhi.pdf` |
-| 225 MB | `2027王道电子版/Wei Zhi/Wang Dao 2027Cao Zuo Xi Tong -Gao Qing Dai Shu Qian (3)/Wang Dao 2027Cao Zuo Xi Tong -Gao Qing Dai - Wei Zhi.pdf` |
-| 230 MB | `2027王道电子版/Wei Zhi/[OCR] Wang Dao 2027Cao Zuo Xi Tong -Gao Qing Dai Shu Qian  20260817 1223.layered (8)/[OCR] Wang Dao 2027Cao Zuo Xi Tong -Gao Qi - Wei Zhi.pdf` |
+| 图像 | 110 dpi / JPEG q55 / sRGB；彩色 + 灰度分别下采样，阈值 1.0 |
+| 文字层 | 完整保留，字符数与原件逐字一致（可搜索、可复制） |
+| 书签 | 完整保留（如数据结构 478 条、操作系统 435 条） |
+| 效果 | 王道四科 836 MB → 142 MB（−83%），单本约 1.5 分钟 |
 
-合计约 1.9 GB。若需入库，可选：GitHub Release 附件（单文件上限 2 GiB）、
-Git LFS（免费额度 1 GiB，不够）、或按页拆分为 < 100 MB 的分卷。
+原本已是 JPEG 且约 145 dpi 的三本教材（严蔚敏、唐朔飞、谢希仁）重压收益 < 4%，
+且会引入二次压缩损失，故保留原文件。
+
+## Calibre 库（不在本仓库内）
+
+原先 `2027王道电子版/` 与 `408课本/` 是两套 Calibre 书库的标准结构
+（`metadata.db` + `Wei Zhi/<书名>/` 内的 `metadata.opf`、`cover.jpg`）。
+这部分已整体拆到仓库外，Calibre 仍可直接打开：
+
+```
+~/Study/calibre-library/2027王道电子版/     # 王道 2027，含无 OCR 版原件
+~/Study/calibre-library/408课本/           # 四本教材原件
+```
+
+仓库里只留下干净的 PDF，不再携带 `metadata.db` / `*.opf` / `cover.jpg` / 作者目录。
 
 ## 备注
 

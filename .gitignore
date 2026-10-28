@@ -1,5 +1,10 @@
 # 大文件（>100 MiB）由 Git LFS 管理，见 .gitattributes
-# 注意：模式里的方括号必须转义，否则会被当成字符类通配符
+
+# Calibre 库不在本仓库内：metadata.db / metadata.opf / cover.jpg 等
+# 归 Calibre 专用的结构已拆到仓库外：
+#   ~/Study/calibre-library/2027王道电子版/
+#   ~/Study/calibre-library/408课本/
+# 仓库内只保留压好的 PDF。
 
 # Calibre 删除书籍的回收站
 .caltrash/
