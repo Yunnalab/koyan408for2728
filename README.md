@@ -2,6 +2,8 @@
 
 27/28 考研 408 资料库(持续调整更新)
 
+同系列仓库：[math-kaoyan](https://github.com/Yunnalab/math-kaoyan)（数学)·[english-kaoyan](https://github.com/Yunnalab/english-kaoyan)（英语）
+
 | 目录              | 资料                                                  |
 | --------------- | --------------------------------------------------- |
 | `2027王道电子版/`    | 2027 王道四科：数据结构、计算机组成原理、操作系统、计算机网络（OCR 版）            |
