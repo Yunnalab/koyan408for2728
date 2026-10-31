@@ -8,3 +8,11 @@
 
 # Calibre 删除书籍的回收站
 .caltrash/
+
+# Calibre 在这个目录被误开时会生成空库骨架，不要进仓库
+2027王道电子版/metadata.db
+2027王道电子版/metadata_db_prefs_backup.json
+2027王道电子版/.calnotes/
+408课本/metadata.db
+408课本/metadata_db_prefs_backup.json
+408课本/.calnotes/

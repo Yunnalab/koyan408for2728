@@ -2,7 +2,7 @@
 
 27/28 考研 408 资料库(持续调整更新)
 
-同系列仓库：[math-kaoyan](https://github.com/Yunnalab/math-kaoyan)（数学)·[english-kaoyan](https://github.com/Yunnalab/english-kaoyan)（英语）
+同系列仓库：[math-kaoyan](https://github.com/Yunnalab/math-kaoyan)（数学）· [english-kaoyan](https://github.com/Yunnalab/english-kaoyan)（英语）
 
 | 目录              | 资料                                                  |
 | --------------- | --------------------------------------------------- |
